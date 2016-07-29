@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#b0000000"
+                android:orientation="vertical"
+                android:padding="30px">
+
+    <TextView
+        android:id="@+id/tv_pop_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30px"
+        android:background="@drawable/text_white_round"
+        android:gravity="center"
+        android:padding="26px"
+        android:text="取消"
+        android:textColor="@color/blue"
+        android:textSize="50px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_pop_cancel"
+        android:background="@drawable/text_white_round"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_pop_1"
+            android:layout_width="match_parent"
+            android:layout_height="144px"
+            android:gravity="center"
+            android:padding="26px"
+            android:text="nvfjdnv"
+            android:textColor="@color/blue"
+            android:textSize="50px"/>
+
+
+        <TextView
+            android:id="@+id/tv_pop_2"
+            android:layout_width="match_parent"
+            android:layout_height="144px"
+            android:gravity="center"
+            android:padding="26px"
+            android:text="vnfsiunvfs"
+            android:textColor="@color/blue"
+            android:textSize="50px"/>
+
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/tv_pop_2"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="30px"
+        android:layout_above="@id/tv_pop_cancel"
+        android:background="@drawable/text_white_round"
+        android:gravity="center"
+        android:padding="26px"
+        android:text="@string/albem"
+        android:textColor="@color/text_blue"
+        android:textSize="50px"/>
+
+    <TextView
+        android:id="@+id/tv_pop_1"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_above="@id/tv_pop_2"
+        android:background="@drawable/text_white_round"
+        android:gravity="center"
+        android:padding="26px"
+        android:text="@string/camera"
+        android:textColor="@color/text_blue"
+        android:textSize="50px"/>-->
+
+
+</RelativeLayout>

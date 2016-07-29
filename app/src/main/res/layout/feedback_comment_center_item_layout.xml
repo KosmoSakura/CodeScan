@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="30px"
+        android:paddingTop="30px">
+
+        <TextView
+            android:id="@+id/tv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/composer_camera"
+            android:drawablePadding="15px"
+            android:gravity="center_vertical"
+            android:text="差不多是很不错"
+            android:textColor="#2c2d33"
+            android:textSize="39px"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tv_evaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/text_blue_round_2"
+            android:gravity="center_vertical"
+            android:paddingBottom="10px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="10px"
+            android:text="才对你承诺"
+            android:textColor="#2c2d33"
+            android:textSize="39px"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imv_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px"
+        android:src="@color/yellow"
+        />
+</LinearLayout>

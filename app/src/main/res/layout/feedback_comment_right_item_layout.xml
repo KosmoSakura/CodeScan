@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="30px"
+        android:ellipsize="end"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="200px"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#89909b"
+        android:textSize="42px"
+        android:textStyle="normal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120px"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <LinearLayout
+            android:id="@+id/ll_icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imv_icon"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:src="@drawable/composer_camera"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_navi_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_toLeftOf="@id/ll_icon_layout"
+            android:background="@drawable/composer_camera"
+            android:orientation="vertical"
+            android:padding="30px"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#2c2d33"
+                android:textSize="48px"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15px"
+                android:layout_marginTop="15px"
+                android:text=""
+                android:textColor="#2c2d33"
+                android:textSize="42px"/>
+
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/composer_camera"
+                android:gravity="right|center_vertical"
+                android:paddingBottom="15px"
+                android:paddingTop="15px"
+                android:text="被粉丝"
+                android:textColor="@color/blue"
+                android:textSize="42px"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imv_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_toLeftOf="@id/ll_icon_layout"
+            android:adjustViewBounds="true"
+            android:background="@drawable/composer_camera"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:paddingBottom="15px"
+            android:paddingLeft="15px"
+            android:paddingRight="33px"
+            android:paddingTop="15px"
+            android:scaleType="centerCrop"
+            android:src="@drawable/composer_camera"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ll_icon_layout"
+            android:background="@drawable/composer_camera"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.3"
+            android:paddingBottom="30px"
+            android:paddingLeft="30px"
+            android:paddingRight="50px"
+            android:paddingTop="30px"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="42px"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_reply2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ll_icon_layout"
+            android:background="@drawable/composer_camera"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.3"
+            android:paddingBottom="30px"
+            android:paddingLeft="30px"
+            android:paddingRight="50px"
+            android:paddingTop="30px"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="42px"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

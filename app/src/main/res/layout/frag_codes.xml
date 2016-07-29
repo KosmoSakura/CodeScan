@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.tandong.sa.stagger.StaggeredGridView
+        android:id="@+id/frag_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:column_count="@integer/grid_column_count"
+        >
+
+    </com.tandong.sa.stagger.StaggeredGridView>
+    <!--<ListView-->
+    <!--android:id="@+id/lv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</ListView>-->
+
+    <LinearLayout
+        android:id="@+id/zoom_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#e0000000"
+        android:visibility="gone">
+
+        <project.zero.codescan.view.ZoomImageView
+            android:id="@+id/zoom"
+            android:layout_width="250dp"
+            android:scaleType="fitXY"
+            android:layout_height="250dp"
+            android:background="@color/green"
+            android:visibility="visible"/>
+    </LinearLayout>
+</RelativeLayout>

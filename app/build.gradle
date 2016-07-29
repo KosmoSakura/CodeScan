@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        Zero {
+            keyAlias 'Zero'
+            keyPassword '123456'
+            storeFile file('D:/MySpace/MyStudio/CodeScan/tool/CodeScan.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        applicationId "project.zero.codescan"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        // dex突破65535的限制
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Zero
+        }
+        debug {
+            signingConfig signingConfigs.Zero
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+//    task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+//        destinationDir file("$projectDir/libs")
+//        baseName "Native_Libs2"
+//        extension "jar"
+//        from fileTree(dir: "libs", include: "**/*.so")
+//        into "lib"
+//    }
+//
+//    tasks.withType(JavaCompile) {
+//        compileTask -> compileTask.dependsOn(nativeLibsToJar)
+//    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile files('libs/SmartAndroid2.0.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/butterknife-7.0.1.jar')
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    compile project(':ShareLibrary')
+    compile files('libs/hyphenatechat_3.1.4.jar')
+}

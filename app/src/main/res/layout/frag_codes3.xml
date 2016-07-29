@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/actionbar_background_item_pressed_end"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/sina"
+        android:layout_width="match_parent"
+        android:text="新浪"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/win"
+        android:layout_width="match_parent"
+        android:text="微信朋友圈"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/win2"
+        android:layout_width="match_parent"
+        android:text="微信好友"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/win3"
+        android:layout_width="match_parent"
+        android:text="QQ好友"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/win4"
+        android:layout_width="match_parent"
+        android:text="空间"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
